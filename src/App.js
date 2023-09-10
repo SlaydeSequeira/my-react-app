@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Navbar1 from './navbar';
+import BirdsComponent from './VantaC';
+import React, { useEffect, useRef } from 'react';
+function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header>
+      <nav className="navbar">
+        <div className="container">
+        <BirdsComponent/>
+        <Navbar1/>
+        </div>
+      </nav>
+    </header>
   );
 }
 
-export default App;
+export default Header;

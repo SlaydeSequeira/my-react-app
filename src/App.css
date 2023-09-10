@@ -13,6 +13,19 @@
   }
 }
 
+#navbar a{
+  margin : 10px;
+  font-size: 20px;
+  color: black;
+
+}
+#navbar{
+  background-color: blue;
+  display: flex;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
