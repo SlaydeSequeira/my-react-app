@@ -1,14 +1,14 @@
 import './App.css';
 import Navbar1 from './navbar';
-import BirdsComponent from './VantaC';
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
+
+
 function Header() {
   return (
     <header>
       <nav className="navbar">
         <div className="container">
-        <BirdsComponent/>
-        <Navbar1/>
+          <Navbar1 />
         </div>
       </nav>
     </header>

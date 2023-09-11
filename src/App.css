@@ -12,6 +12,62 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.birds-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontal centering */
+  text-align: center; /* Optional: Center the text as well */
+  height: 100vh; /* Optional: Center vertically on the page */
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center;
+  height: 100vh;
+}
+
+#hackathon-title {
+  color: aliceblue;
+  font-size: 40px;
+}
+
+.titles {
+  color: rgb(52, 52, 239);
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  transform: translate(-20%, 0%);
+}
+#host-section{
+  order: 2;
+  transform: translate(0%, 100%);
+}
+.icon {
+  flex: 1;
+  margin: 0 10px;
+}
+#host{
+  color: aliceblue;
+  font-size: 20px;
+  transform: translate(20%, 0%);
+}
+.heading-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
 
 #navbar a{
   margin : 10px;
@@ -20,32 +76,12 @@
 
 }
 #navbar{
+  z-index: 1;
   background-color: blue;
+  width: max-content;
+  padding-right: 100%;
   display: flex;
   position: fixed;
   top: 0; 
   left: 0; 
-}
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
